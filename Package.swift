@@ -9,7 +9,8 @@ let package = Package(
         .macOS(.v10_12),
     ],
     products: [
-        .executable(name: "xcc", targets: ["XcodeCoverageConverter"])
+        .executable(name: "xcc", targets: ["XcodeCoverageConverter"]),
+        .library(name: "XcodeCoverageConverter", targets: ["Core"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
