@@ -10,7 +10,7 @@ let package = Package(
     ],
     products: [
         .executable(name: "xcc", targets: ["XcodeCoverageConverter"]),
-        .library(name: "CoverageConverterCore", targets: ["Core"]),
+        .library(name: "CoverageConverterCore", targets: ["Core", "ResourcesEmbedded"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
